@@ -40,7 +40,8 @@ Hi! I’m a beginner in web development, and this is my Building Planner app for
 - I’m still learning, so I didn’t handle some things (like if you draw a rectangle with negative size).
 
 ## Screenshots
-Here are some pictures of my app!
+## Screenshots
+Here are some pictures of my app! I had trouble getting the images to show up at first, but I figured out I needed to match the file names exactly.
 
 ### Drawing Some Shapes
 ![Drawing shapes](screenshots/drawing-shapes.png)
