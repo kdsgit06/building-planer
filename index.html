@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Toolbar with buttons -->
+        <div class="toolbar">
+            <button @click="setTool('line')">Draw Line</button>
+            <button @click="setTool('rectangle')">Draw Rectangle</button>
+            <button @click="setTool('circle')">Draw Circle</button>
+            <button @click="setTool('select')">Select</button>
+            <button @click="toggleAnnotations">
+                {{ showAnnotations ? 'Hide Annotations' : 'Show Annotations' }}
+            </button>
+            <button @click="saveDrawing">Save</button>
+            <button @click="clearCanvas">Clear</button>
+        </div>
+        <!-- Display the current tool -->
+        <div class="status">
+            Current Tool: {{ currentTool }}
+        </div>
+        <!-- Canvas for drawing -->
+        <canvas id="drawingCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <!-- Include Vue.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- Include your JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
